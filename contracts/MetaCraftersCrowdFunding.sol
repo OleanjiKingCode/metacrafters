@@ -68,7 +68,6 @@ contract Crowdfunding {
     }
 
     /// @notice Claim Fund back when goal not met
-
     function claimRefund() external payable {
         if (totalFundsRaised >= fundingGoal) revert Funding_Goal_Reached();
 
